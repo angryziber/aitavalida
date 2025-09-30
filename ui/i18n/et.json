@@ -1,0 +1,94 @@
+{
+  "title": "Aita Valida",
+  "compass": {
+    "title": "Valija Kompass",
+    "options": {
+      "-2": "Kindel ei",
+      "-1": "Pigem ei",
+      "0": "Neutraalne",
+      "1": "Pigem jah",
+      "2": "Kindel jah"
+    },
+    "tallinn2025": [
+      {
+        "name": "Linnajuhtimine ja bürokraatia",
+        "questions": {
+          "1": "Kas linnaosadel peaks olema suurem otsustusõigus ja oma eelarve?",
+          "2": "Kas ehituslubade ja detailplaneeringute menetlemist tuleks oluliselt kiirendada?",
+          "3": "Kas elanikel peaks olema rohkem võimalusi linna otsustes kaasa rääkida (rahvaküsitlused, kaasav eelarve, arutelud)?",
+          "4": "Kas linn peaks avaldama kõik olulisemad otsused ja lepingud masinloetavalt?",
+          "5": "Kas linn peaks peatama uute trammiliinide ja suuremate infrastruktuuriprojektide elluviimise, kuni on tehtud põhjalikud uuringud ja analüüsid?",
+          "6": "Kas transpordi arendamist tuleks prioriteediks pidada ka bürokraatia vähendamise arvelt?"
+        }
+      },
+      {
+        "name": "Elamispoliitika ja maksud",
+        "questions": {
+          "7": "Kas linn peaks ehitama rohkem munitsipaalkortereid taskukohase üüriga?",
+          "8": "Kas linn peaks looma või laiendama soodsaid eluasemelaene noortele peredele?",
+          "9": "Kas linn peaks suurendama toetusi eramajade ja kortermajade renoveerimiseks (fassaadid, energiatõhusus)?",
+          "10": "Kas Tallinna maamaksu ja kohalike maksude vähendamine peaks olema prioriteet?"
+        }
+      },
+      {
+        "name": "Transport ja linnaruumi arendamine",
+        "questions": {
+          "11": "Kas tasuta ühistransport peaks Tallinnas jätkuma?",
+          "12": "Kas öise ühistranspordi liinivõrk ja sagedus peaks suurenema?",
+          "13": "Kas autode liikumist kesklinnas tuleks piirata?",
+          "14": "Kas jalgratta- ja kergliiklusteede rajamine peaks olema prioriteet isegi siis, kui see vähendab autodele mõeldud ruumi?",
+          "15": "Kas linn peaks vastutama kõnniteede ja kergliiklusteede lume- ja libedustõrje eest?"
+        }
+      },
+      {
+        "name": "Haridus ja keel",
+        "questions": {
+          "16": "Kas kõik Tallinna lasteaiad ja koolid peaksid olema eestikeelsed hiljemalt 2027/28. aastaks?",
+          "17": "Kas lasteaiakoht peaks olema tasuta juba esimesest lapsest?",
+          "18": "Kas linn peaks rohkem investeerima kooli- ja lasteaiahoonete renoveerimisse isegi maksutõusu hinnaga?"
+        }
+      },
+      {
+        "name": "Keskkond ja rohepööre",
+        "questions": {
+          "19": "Kas linn peaks kaitsma haljasalasid ja parke uusarenduste arvelt?",
+          "20": "Kas linn peaks toetama tuule- ja päikeseenergia arendusi isegi siis, kui osa elanikke on vastu?",
+          "21": "Kas Tallinna kaugkütte ja energia taristu investeeringud peaksid liikuma täielikult taastuvenergiale?"
+        }
+      },
+      {
+        "name": "Sotsiaal- ja tervishoid",
+        "questions": {
+          "22": "Kas linn peaks pakkuma tasuta hambaravi lastele ja pensionäridele?",
+          "23": "Kas sotsiaaltoetuste asemel peaks linn panustama rohkem töövõimaluste loomisesse ja sotsiaalteenuste arendamisse?",
+          "24": "Kas linn peaks avama rohkem kogukonnakeskusi ja rahastama kohalikke algatusi?"
+        }
+      },
+      {
+        "name": "Kultuur, ööelu ja turism",
+        "questions": {
+          "25": "Kas linn peaks rahaliselt rohkem toetama kohalikke kogukonnakultuuri ja väiksemaid üritusi?",
+          "26": "Kas linn peaks panustama rohkem suurte rahvusvaheliste ürituste ja festivalide korraldamisse?",
+          "27": "Kas linn peaks ametlikult toetama ööelu arengukava ja 24h linnastrateegiat?"
+        }
+      },
+      {
+        "name": "Mitmekesisus, kosmopoliitsus ja sisseränne",
+        "questions": {
+          "30": "Kas linn peaks piirama sisserännet ja välisinimeste osalust kohalikes kogukondades?",
+          "31": "Kas linn peaks eelistama kohaliku kultuuri ja traditsioonide arendamist kosmopoliitse mitmekultuurilise arengu asemel?"
+        }
+      },
+      {
+        "name": "Majandus, väikeettevõtlus ja innovatsioon",
+        "questions": {
+          "28": "Kas linn peaks pakkuma rohkem maksusoodustusi ja lihtsamaid tingimusi väikeettevõtjatele ja alustavatele ettevõtetele?",
+          "29": "Kas linn peaks looma eraldi fondi või programmi innovatsiooni ja start-up’ide toetamiseks?"
+        }
+      }
+    ]
+  },
+  "errors": {
+    "technical": "Technical error, please try again"
+  }
+}

@@ -1,6 +1,8 @@
 <script lang="ts">
   import {t} from 'i18n'
   import Toasts from 'src/components/Toasts.svelte'
+  import {Route, Router} from 'svelte-routing'
+  import Compass from 'src/pages/Compass.svelte'
 </script>
 
 <svelte:head>
@@ -11,4 +13,9 @@
 
 <main class="text-center pt-10">
   <h1>{t.title}</h1>
+
+  <Router>
+    <Route path="/" component={Compass}/>
+  </Router>
+
 </main>

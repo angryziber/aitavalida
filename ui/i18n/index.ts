@@ -1,4 +1,4 @@
-import type en from './en.json'
+import type et from './et.json'
 import langs from './langs.json'
 
 export function changeLang(lang: typeof langs[number]) {
@@ -16,9 +16,9 @@ function choosePreferredLang() {
 }
 
 async function load() {
-  if (lang === 'en') return (await import('./en.json')).default
+  if (lang === 'et') return (await import('./et.json')).default
   else throw new Error('Unsupported lang: ' + lang)
 }
 
 export const lang = choosePreferredLang()
-export let t: typeof en = await load()
+export let t: typeof et = await load()
