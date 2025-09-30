@@ -1,5 +1,6 @@
 <script lang="ts">
   import {t} from 'i18n'
+  import Parties from 'src/pages/Parties.svelte'
 
   export let name = 'tallinn2025' as const
 
@@ -26,6 +27,8 @@
 </script>
 
 <h2 class="my-2">{elections.name} - {t.compass.title}</h2>
+
+<Parties/>
 
 <div class="max-w-xl mx-auto mb-96">
   {#each elections.topics as topic}

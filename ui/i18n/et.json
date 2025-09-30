@@ -14,18 +14,54 @@
     },
     "2025": {
       "parties": {
-        "kesk": "Eesti Keskerakond",
-        "reform": "Eesti Reformierakond",
-        "ekre": "Eesti Konservatiivne Rahvaerakond (EKRE)",
-        "sde": "Sotsiaaldemokraatlik Erakond (SDE)",
-        "rohelised": "Eestimaa Rohelised",
-        "isamaa": "Isamaa",
-        "e200": "Eesti 200",
-        "parempoolsed": "Parempoolsed",
-        "arupahe": "Vabaerakond Aru Pähe",
-        "rahvuslased": "Eesti Rahvuslased ja Konservatiivid",
-        "planb": "Plan B valimisliit",
-        "koos": "Koos"
+        "kesk": {
+          "name": "Keskerakond",
+          "url": "https://keskerakond.ee/wp-content/uploads/2025/09/Eesti_Keskerakonna_Tallinna_valimisplatvorm_2025_29_09_VALMIS.pdf"
+        },
+        "reform": {
+          "name": "Reformierakond",
+          "url": "https://reform.ee/kohaliku-omavalitsuse-volikogu-valimised-2025/tallinn/valimisprogramm"
+        },
+        "ekre": {
+          "name": "EKRE",
+          "url": "https://www.ekre.ee/muidugi-ekre/"
+        },
+        "sde": {
+          "name": "Sotsid (SDE)",
+          "url": "https://valimised.sotsid.ee/et/tallinna-programm/"
+        },
+        "rohelised": {
+          "name": "Rohelised",
+          "url": "https://rohelised.ee/eestimaa-rohelised-kov-2025-tallinna-valimisprogramm/"
+        },
+        "isamaa": {
+          "name": "Isamaa",
+          "url": "https://kov25.isamaa.ee/"
+        },
+        "e200": {
+          "name": "Eesti 200",
+          "url": "https://eesti200.ee/kov-2025/"
+        },
+        "parempoolsed": {
+          "name": "Parempoolsed",
+          "url": "https://parempoolsed.ee/kov-2025/"
+        },
+        "vabaerakond": {
+          "name": "Vabaerakond (Aru Pähe)",
+          "url": "https://vabaerakond.ee/vabaerakond-aru-pahe-kov-2025-programm/"
+        },
+        "eerk": {
+          "name": "Eesti Rahvuslased ja Konservatiivid",
+          "url": "https://eerk.ee/eerk-kandidaadid-kohalikes-omavalitsustes/"
+        },
+        "planb": {
+          "name": "Plan B",
+          "url": "https://www.plaanb.ee/programm/tallinna-plaanb-valimisliit/"
+        },
+        "koos": {
+          "name": "KOOS",
+          "url": "https://koos-vmeste.ee/"
+        }
       }
     }
   },
