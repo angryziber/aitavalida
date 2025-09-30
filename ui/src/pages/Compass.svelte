@@ -21,7 +21,7 @@
       score += (answers[i] - elections.parties[i][p]) ** 2
       count++
     }
-    return {party: p, score: parseFloat(Math.sqrt(score / count).toFixed(2))}
+    return {party: p, score: Math.sqrt(score / count)}
   }).sort((a, b) => a.score - b.score)
 </script>
 
@@ -49,5 +49,6 @@
   {/each}
 </div>
 
-Distances:
-{JSON.stringify(results)}
+{#each results as result}
+  <div><b>{parties[result.party].name}</b>: {result.score.toFixed(2)}</div>
+{/each}
