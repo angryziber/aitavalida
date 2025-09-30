@@ -1,14 +1,17 @@
 <script lang="ts">
   import {t} from 'i18n'
 
-  let elections = t.compass.tallinn2025
+  export let name = 'tallinn2025' as const
+
+  let elections = t.compass[name]
 
   const options = [-2, -1, 0, 1, 2]
 
-  let answers = {}
+  let answers = JSON.parse(localStorage[name] ?? '{}')
+  $: localStorage[name] = JSON.stringify(answers)
 </script>
 
-<h2 class="my-2">{elections.name}</h2>
+<h2 class="my-2">{elections.name} - {t.compass.title}</h2>
 
 <div class="max-w-xl mx-auto mb-96">
   {#each elections.topics as topic}
