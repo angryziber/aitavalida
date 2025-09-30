@@ -6,9 +6,23 @@
   let elections = t.compass[name]
 
   const options = [-2, -1, 0, 1, 2]
+  const parties = t.kov['2025'].parties
 
   let answers = JSON.parse(localStorage[name] ?? '{}')
   $: localStorage[name] = JSON.stringify(answers)
+
+  $: results = Object.keys(parties).map(p => {
+    let score = 0
+    let count = 0
+    for (let topic of elections.topics) {
+      for (let [i, question] of Object.entries(topic.questions)) {
+        if (!(i in answers)) continue
+        score += (answers[i] - question.parties[p]) ** 2
+        count++
+      }
+    }
+    return {[p]: Math.sqrt(score / count)}
+  }).sort((a, b) => a.score - b.score)
 </script>
 
 <h2 class="my-2">{elections.name} - {t.compass.title}</h2>
@@ -32,3 +46,4 @@
     </section>
   {/each}
 </div>
+{JSON.stringify(results)}

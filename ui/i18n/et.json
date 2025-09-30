@@ -67,7 +67,7 @@
                 "kesk": 0,
                 "reform": 2,
                 "ekre": 1,
-                "sde": -1,
+                "sde": 2,
                 "rohelised": -2,
                 "isamaa": 2,
                 "e200": 2,
@@ -317,7 +317,7 @@
             "16": {
               "q": "Kas kõik Tallinna lasteaiad ja koolid peaksid olema eestikeelsed hiljemalt 2027/28. aastaks?",
               "parties": {
-                "kesk": 1,
+                "kesk": -1,
                 "reform": 2,
                 "ekre": 2,
                 "sde": 0,
