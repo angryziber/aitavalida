@@ -19,7 +19,7 @@
       <h3 class="sticky top-0 bg-yellow-100 py-1">{topic.name}</h3>
 
       {#each Object.entries(topic.questions) as [i, question]}
-        <h4>{i}. {question}</h4>
+        <h4>{i}. {question.q}</h4>
         <div class="flex justify-center pb-8">
           {#each options as option}
             {@const checked = answers[i] === option}
