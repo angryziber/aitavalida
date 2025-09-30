@@ -1,5 +1,34 @@
 {
   "title": "Aita Valida",
+  "kov": {
+    "title": "Kohalike omavalitsuste valimised",
+    "tallinn": {
+      "haabersti": "Haabersti",
+      "kesklinn": "Kesklinn",
+      "kristiine": "Kristiine",
+      "lasnamäe": "Lasnamäe",
+      "mustamäe": "Mustamäe",
+      "nõmme": "Nõmme",
+      "pirita": "Pirita",
+      "pohja": "Põhja-Tallinn"
+    },
+    "2025": {
+      "parties": {
+        "kesk": "Eesti Keskerakond",
+        "reform": "Eesti Reformierakond",
+        "ekre": "Eesti Konservatiivne Rahvaerakond (EKRE)",
+        "sde": "Sotsiaaldemokraatlik Erakond (SDE)",
+        "rohelised": "Eestimaa Rohelised",
+        "isamaa": "Isamaa",
+        "e200": "Eesti 200",
+        "parempoolsed": "Parempoolsed",
+        "arupahe": "Vabaerakond Aru Pähe",
+        "rahvuslased": "Eesti Rahvuslased ja Konservatiivid",
+        "planb": "Plan B valimisliit",
+        "koos": "Koos"
+      }
+    }
+  },
   "compass": {
     "title": "Valija Kompass",
     "options": {
