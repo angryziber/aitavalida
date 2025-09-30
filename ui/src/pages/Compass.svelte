@@ -5,6 +5,7 @@
   export let name = 'tallinn2025' as const
 
   let elections = t.compass[name]
+  let questions = elections.questions
 
   const options = [-2, -1, 0, 1, 2]
   const parties = t.kov['2025'].parties
@@ -15,14 +16,12 @@
   $: results = Object.keys(parties).map(p => {
     let score = 0
     let count = 0
-    for (let topic of elections.topics) {
-      for (let [i, question] of Object.entries(topic.questions)) {
-        if (!(i in answers)) continue
-        score += (answers[i] - question.parties[p]) ** 2
-        count++
-      }
+    for (let i of Object.keys(questions)) {
+      if (!(i in answers)) continue
+      score += (answers[i] - elections.parties[i][p]) ** 2
+      count++
     }
-    return {[p]: Math.sqrt(score / count)}
+    return {party: p, score: parseFloat(Math.sqrt(score / count).toFixed(2))}
   }).sort((a, b) => a.score - b.score)
 </script>
 
@@ -35,8 +34,8 @@
     <section class="mt-4 space-y-4">
       <h3 class="sticky top-0 bg-yellow-100 py-1">{topic.name}</h3>
 
-      {#each Object.entries(topic.questions) as [i, question]}
-        <h4>{i}. {question.q}</h4>
+      {#each topic.questions as i}
+        <h4>{i}. {questions[i]}</h4>
         <div class="flex justify-center pb-8">
           {#each options as option}
             {@const checked = answers[i] === option}
@@ -49,4 +48,6 @@
     </section>
   {/each}
 </div>
+
+Distances:
 {JSON.stringify(results)}
