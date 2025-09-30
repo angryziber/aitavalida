@@ -1,9 +1,9 @@
 <script lang="ts">
-  import {t} from 'i18n'
+  export let parties: Record<string, {name: string, url: string}>
 </script>
 
 <ul>
-  {#each Object.values(t.kov['2025'].parties) as party}
+  {#each Object.values(parties) as party}
     <li><a href={party.url} target="_blank">{party.name}</a></li>
   {/each}
 </ul>

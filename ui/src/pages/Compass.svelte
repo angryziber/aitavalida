@@ -27,7 +27,8 @@
 
 <h2 class="my-2">{elections.name} - {t.compass.title}</h2>
 
-<Parties/>
+<Parties {parties}/>
+<!-- TODO: select party for comparison -->
 
 <div class="max-w-xl mx-auto mb-96">
   {#each elections.topics as topic}
