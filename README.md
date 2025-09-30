@@ -1,8 +1,6 @@
-# Klite starter project
+# Aitavalida - help me vote
 
-**Don't forget to update this file with your own project description.**
-
-This is a preconfigured sample/starter project with Kotlin/Klite with some best-practices:
+An app to help people in Estonia to choose their political party and candidates at elections.
 
 * Simple src/test directory structure
 * Committed `.env` file for dev configuration
