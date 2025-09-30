@@ -4,6 +4,8 @@
   let elections = t.compass.tallinn2025
 
   const options = [-2, -1, 0, 1, 2]
+
+  let answers = {}
 </script>
 
 <div class="max-w-xl mx-auto mb-10">
@@ -13,12 +15,12 @@
 
       {#each Object.entries(topic.questions) as [i, question]}
         <h3>{i}. {question}</h3>
-        <div class="flex gap-4 justify-center pb-8">
-          {#each options as option, i}
-            <label class="flex items-center gap-2">
-              <input type="radio" name="option">
+        <div class="flex justify-center pb-8">
+          {#each options as option}
+            {@const checked = answers[i] === option}
+            <button class="px-3 py-2 border" class:bg-gray-100={checked} aria-checked={checked} onclick={() => answers[i] = option}>
               {t.compass.options[option.toString()]}
-            </label>
+            </button>
           {/each}
         </div>
       {/each}
