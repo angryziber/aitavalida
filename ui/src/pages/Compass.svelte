@@ -8,13 +8,15 @@
   let answers = {}
 </script>
 
-<div class="max-w-xl mx-auto mb-10">
+<h2 class="my-2">{elections.name}</h2>
+
+<div class="max-w-xl mx-auto mb-96">
   {#each elections.topics as topic}
     <section class="mt-4 space-y-4">
-      <h2>{topic.name}</h2>
+      <h3 class="sticky top-0 bg-yellow-100 py-1">{topic.name}</h3>
 
       {#each Object.entries(topic.questions) as [i, question]}
-        <h3>{i}. {question}</h3>
+        <h4>{i}. {question}</h4>
         <div class="flex justify-center pb-8">
           {#each options as option}
             {@const checked = answers[i] === option}
