@@ -43,7 +43,7 @@
           "url": "https://eesti200.ee/kov-2025/"
         },
         "parem": {
-          "name": "parem",
+          "name": "Parempoolsed",
           "url": "https://parempoolsed.ee/kov-2025/"
         },
         "vaba": {
@@ -67,6 +67,9 @@
   },
   "compass": {
     "title": "Valija Kompass",
+    "programs": "Erakondade programmid",
+    "disclaimer": "Valija Kompass on tööriist, mis aitab sul leida endale sobivaima erakonna või valimisliidu valimistel. Vastates küsimustele saad teada, millised erakonnad või valimisliidud on sinu seisukohtadele kõige lähemal. Lõpliku valiku tegemiseks tasub lisaks programmi lubadustele uurida ka kandidaati eelnevat sõnakindlust ja tegusid.",
+    "results": "Tulemused (lähedus sinu vastustele)",
     "options": {
       "-2": "Kindel ei",
       "-1": "Pigem ei",

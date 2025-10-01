@@ -27,10 +27,13 @@
 
 <h2 class="my-2">{elections.name} - {t.compass.title}</h2>
 
-<Parties {parties}/>
-<!-- TODO: select party for comparison -->
-
 <div class="max-w-xl mx-auto mb-96">
+  <p class="bg-blue-100 px-6 py-4 my-4">{t.compass.disclaimer}</p>
+
+  <p>{t.compass.programs}:</p>
+  <Parties {parties}/>
+  <!-- TODO: select party for comparison -->
+
   {#each elections.topics as topic}
     <section class="mt-4 space-y-4">
       <h3 class="sticky top-0 bg-yellow-100 py-1">{topic.name}</h3>
@@ -48,8 +51,9 @@
       {/each}
     </section>
   {/each}
-</div>
 
-{#each results as result}
-  <div><b>{parties[result.party].name}</b>: {result.score.toFixed(2)}</div>
-{/each}
+  <h2 class="my-8">{t.compass.results}</h2>
+  {#each results as result}
+    <div><b>{parties[result.party].name}</b>: {result.score.toFixed(2)}</div>
+  {/each}
+</div>
