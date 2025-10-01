@@ -21,6 +21,7 @@ RUN rm -fr /usr/sbin /bin/ch*
 WORKDIR /app
 COPY --from=build-ui /ui/build ui/public
 COPY --from=build-server /app/build/libs ./
+COPY --from=build-server /app/.env ./
 
 ARG VERSION=dev
 ENV VERSION=$VERSION
