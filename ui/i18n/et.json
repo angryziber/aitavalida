@@ -84,26 +84,26 @@
         "5": "Kas linn peaks peatama uute infrastruktuuriprojektide elluviimise, kuni on tehtud lisauuringud ja analüüsid?",
         "6": "Kas linnaametnikute juhtivate erakondadesse kuulumine on oluline?",
         "7": "Kas linn peaks ehitama rohkem munitsipaalkortereid taskukohase üüriga?",
-        "9": "Kas linn peaks suurendama toetusi eramajade ja kortermajade renoveerimiseks (fassaadid, energiatõhusus)?",
-        "10": "Kas Tallinna maamaksu ja kohalike maksude vähendamine peaks olema prioriteet?",
-        "11": "Kas tasuta ühistransport peaks Tallinnas jätkuma?",
-        "12": "Kas öise ühistranspordi liinivõrk ja sagedus peaks suurenema?",
-        "13": "Kas autode liikumist kesklinnas tuleks vähendada?",
-        "14": "Kas inimeste jaoks linnaruumi arendamine peaks olema prioriteet isegi siis, kui see vähendab autodele mõeldud ruumi?",
-        "15": "Kas linn peaks vastutama kõnniteede ja kergliiklusteede lume- ja libedustõrje eest?",
-        "16": "Kas kõik Tallinna lasteaiad ja koolid peaksid olema eestikeelsed?",
-        "17": "Kas lasteaiakoht peaks olema tasuta juba esimesest lapsest?",
-        "18": "Kas linn peaks looma rohkem lasteaedu ja koole, et klassid oleksid väiksemad?",
-        "19": "Kas linn peaks kaitsma haljasalasid ja parke uusarenduste arvelt?",
-        "21": "Kas Tallinna kaugkütte ja energia taristu investeeringud peaksid liikuma rohkem taastuvenergiale?",
-        "23": "Kas sotsiaaltoetuste asemel peaks linn panustama rohkem töövõimaluste loomisesse ja sotsiaalteenuste arendamisse?",
-        "24": "Kas linn peaks avama rohkem kogukonnakeskusi ja rahastama kohalikke algatusi?",
-        "26": "Kas linn peaks panustama rohkem suurte rahvusvaheliste ürituste ja festivalide korraldamisse?",
-        "27": "Kas linn peaks ametlikult toetama ööelu arengukava ja 24h linnastrateegiat?",
-        "28": "Kas linn peaks piirama sisserännet ja välisinimeste osalust kohalikes kogukondades?",
-        "29": "Kas linn peaks toetama expate ja kosmopoliitse mitmekultuurilise arengu?",
-        "30": "Kas linn peaks pakkuma rohkem maksusoodustusi ja lihtsamaid tingimusi väikeettevõtjatele ja alustavatele ettevõtetele?",
-        "31": "Kas linn peaks looma eraldi fondi või programmi innovatsiooni ja start-up’ide toetamiseks?"
+        "8": "Kas linn peaks suurendama toetusi eramajade ja kortermajade renoveerimiseks (fassaadid, energiatõhusus)?",
+        "9": "Kas Tallinna maamaksu ja kohalike maksude vähendamine peaks olema prioriteet?",
+        "10": "Kas tasuta ühistransport peaks Tallinnas jätkuma?",
+        "11": "Kas öise ühistranspordi liinivõrk ja sagedus peaks suurenema?",
+        "12": "Kas autode liikumist kesklinnas tuleks vähendada?",
+        "13": "Kas inimeste jaoks linnaruumi arendamine peaks olema prioriteet isegi siis, kui see vähendab autodele mõeldud ruumi?",
+        "14": "Kas linn peaks vastutama kõnniteede ja kergliiklusteede lume- ja libedustõrje eest?",
+        "15": "Kas kõik Tallinna lasteaiad ja koolid peaksid olema eestikeelsed?",
+        "16": "Kas lasteaiakoht peaks olema tasuta juba esimesest lapsest?",
+        "17": "Kas linn peaks looma rohkem lasteaedu ja koole, et klassid oleksid väiksemad?",
+        "18": "Kas linn peaks kaitsma haljasalasid ja parke uusarenduste arvelt?",
+        "19": "Kas Tallinna kaugkütte ja energia taristu investeeringud peaksid liikuma rohkem taastuvenergiale?",
+        "20": "Kas sotsiaaltoetuste asemel peaks linn panustama rohkem töövõimaluste loomisesse ja sotsiaalteenuste arendamisse?",
+        "21": "Kas linn peaks avama rohkem kogukonnakeskusi ja rahastama kohalikke algatusi?",
+        "22": "Kas linn peaks panustama rohkem suurte rahvusvaheliste ürituste ja festivalide korraldamisse?",
+        "23": "Kas linn peaks ametlikult toetama ööelu arengukava ja 24h linnastrateegiat?",
+        "24": "Kas linn peaks piirama sisserännet ja välisinimeste osalust kohalikes kogukondades?",
+        "25": "Kas linn peaks toetama expate ja kosmopoliitse mitmekultuurilise arengu?",
+        "26": "Kas linn peaks pakkuma rohkem maksusoodustusi ja lihtsamaid tingimusi väikeettevõtjatele ja alustavatele ettevõtetele?",
+        "27": "Kas linn peaks looma eraldi fondi või programmi innovatsiooni ja start-up’ide toetamiseks?"
       },
       "topics": [
         {
@@ -112,35 +112,35 @@
         },
         {
           "name": "Elamispoliitika ja maksud",
-          "questions": ["7","9","10"]
+          "questions": ["7","8","9"]
         },
         {
           "name": "Transport ja linnaruumi arendamine",
-          "questions": ["11","12","13","14","15"]
+          "questions": ["10","11","12","13","14"]
         },
         {
           "name": "Haridus ja keel",
-          "questions": ["16","17","18"]
+          "questions": ["15","16","17"]
         },
         {
           "name": "Keskkond ja rohepööre",
-          "questions": ["19","21"]
+          "questions": ["18","19"]
         },
         {
           "name": "Sotsiaal- ja tervishoid",
-          "questions": ["23","24"]
+          "questions": ["20","21"]
         },
         {
           "name": "Kultuur, ööelu ja turism",
-          "questions": ["26","27"]
+          "questions": ["22","23"]
         },
         {
           "name": "Mitmekesisus, kosmopoliitsus ja sisseränne",
-          "questions": ["28","29"]
+          "questions": ["24","25"]
         },
         {
           "name": "Majandus, väikeettevõtlus ja innovatsioon",
-          "questions": ["30","31"]
+          "questions": ["26","27"]
         }
       ],
       "parties": {
@@ -151,26 +151,26 @@
         "5": {"kesk": 2,"reform": -2,"ekre": -1,"sde": -2,"rohelised": -2,"isamaa": 0,"e200": -1,"parem": -1,"vaba": 0,"eerk": 1,"planb": 1,"koos": 0},
         "6": {"kesk": 2,"reform": 0,"ekre": 1,"sde": -2,"rohelised": -2,"isamaa": 1,"e200": -2,"parem": 2,"vaba": 1,"eerk": 1,"planb": 0,"koos": 0},
         "7": {"kesk": 2,"reform": 2,"ekre": 0,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": -1,"planb": 1,"koos": 2},
-        "9": {"kesk": 2,"reform": 2,"ekre": 0,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": 0,"planb": 1,"koos": 2},
-        "10": {"kesk": 0,"reform": 2,"ekre": 1,"sde": -1,"rohelised": -2,"isamaa": 2,"e200": 1,"parem": 2,"vaba": 1,"eerk": 1,"planb": 0,"koos": 0},
-        "11": {"kesk": 2,"reform": 2,"ekre": 0,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": -1,"planb": 1,"koos": 2},
-        "12": {"kesk": 2,"reform": 2,"ekre": -1,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": -2,"planb": 0,"koos": 2},
+        "8": {"kesk": 2,"reform": 2,"ekre": 0,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": 0,"planb": 1,"koos": 2},
+        "9": {"kesk": 0,"reform": 2,"ekre": 1,"sde": -1,"rohelised": -2,"isamaa": 2,"e200": 1,"parem": 2,"vaba": 1,"eerk": 1,"planb": 0,"koos": 0},
+        "10": {"kesk": 2,"reform": 2,"ekre": 0,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": -1,"planb": 1,"koos": 2},
+        "11": {"kesk": 2,"reform": 2,"ekre": -1,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": -2,"planb": 0,"koos": 2},
+        "12": {"kesk": -1,"reform": 2,"ekre": -2,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 0,"eerk": -2,"planb": 1,"koos": 1},
         "13": {"kesk": -1,"reform": 2,"ekre": -2,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 0,"eerk": -2,"planb": 1,"koos": 1},
-        "14": {"kesk": -1,"reform": 2,"ekre": -2,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 0,"eerk": -2,"planb": 1,"koos": 1},
-        "15": {"kesk": 2,"reform": 2,"ekre": 1,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 2,"vaba": 1,"eerk": 1,"planb": 1,"koos": 2},
-        "16": {"kesk": 1,"reform": 2,"ekre": 2,"sde": 0,"rohelised": -1,"isamaa": 2,"e200": 1,"parem": 2,"vaba": 0,"eerk": 2,"planb": 0,"koos": -1},
-        "17": {"kesk": 2,"reform": 2,"ekre": 0,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": 0,"planb": 1,"koos": 2},
-        "18": {"kesk": 1,"reform": 2,"ekre": 0,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": 0,"planb": 1,"koos": 2},
-        "19": {"kesk": 2,"reform": 1,"ekre": -1,"sde": 2,"rohelised": 2,"isamaa": 0,"e200": 2,"parem": 1,"vaba": 1,"eerk": -2,"planb": 1,"koos": 2},
-        "21": {"kesk": 0,"reform": 2,"ekre": -1,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": -2,"planb": 1,"koos": 2},
-        "23": {"kesk": 1,"reform": 2,"ekre": 1,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": 0,"planb": 1,"koos": 2},
-        "24": {"kesk": 1,"reform": 2,"ekre": 0,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": 0,"planb": 1,"koos": 2},
-        "26": {"kesk": 2,"reform": 2,"ekre": -1,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 0,"vaba": 1,"eerk": -2,"planb": 1,"koos": 2},
-        "27": {"kesk": 0,"reform": 2,"ekre": -2,"sde": 2,"rohelised": 2,"isamaa": 0,"e200": 2,"parem": 0,"vaba": 1,"eerk": -2,"planb": 1,"koos": 2},
-        "28": {"kesk": -2,"reform": -2,"ekre": 2,"sde": -2,"rohelised": -2,"isamaa": 1,"e200": -2,"parem": 2,"vaba": -1,"eerk": 2,"planb": -1,"koos": -2},
-        "29": {"kesk": 1,"reform": 1,"ekre": -2,"sde": 2,"rohelised": 2,"isamaa": -1,"e200": 2,"parem": -1,"vaba": -1,"eerk": -2,"planb": 0,"koos": 1},
-        "30": {"kesk": 2,"reform": 2,"ekre": 1,"sde": 1,"rohelised": -1,"isamaa": 2,"e200": 2,"parem": 2,"vaba": 1,"eerk": 1,"planb": 1,"koos": 1},
-        "31": {"kesk": 2,"reform": 2,"ekre": 0,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": 0,"planb": 1,"koos": 2}
+        "14": {"kesk": 2,"reform": 2,"ekre": 1,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 2,"vaba": 1,"eerk": 1,"planb": 1,"koos": 2},
+        "15": {"kesk": 1,"reform": 2,"ekre": 2,"sde": 0,"rohelised": -1,"isamaa": 2,"e200": 1,"parem": 2,"vaba": 0,"eerk": 2,"planb": 0,"koos": -1},
+        "16": {"kesk": 2,"reform": 2,"ekre": 0,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": 0,"planb": 1,"koos": 2},
+        "17": {"kesk": 1,"reform": 2,"ekre": 0,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": 0,"planb": 1,"koos": 2},
+        "18": {"kesk": 2,"reform": 1,"ekre": -1,"sde": 2,"rohelised": 2,"isamaa": 0,"e200": 2,"parem": 1,"vaba": 1,"eerk": -2,"planb": 1,"koos": 2},
+        "19": {"kesk": 0,"reform": 2,"ekre": -1,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": -2,"planb": 1,"koos": 2},
+        "20": {"kesk": 1,"reform": 2,"ekre": 1,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": 0,"planb": 1,"koos": 2},
+        "21": {"kesk": 1,"reform": 2,"ekre": 0,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": 0,"planb": 1,"koos": 2},
+        "22": {"kesk": 2,"reform": 2,"ekre": -1,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 0,"vaba": 1,"eerk": -2,"planb": 1,"koos": 2},
+        "23": {"kesk": 0,"reform": 2,"ekre": -2,"sde": 2,"rohelised": 2,"isamaa": 0,"e200": 2,"parem": 0,"vaba": 1,"eerk": -2,"planb": 1,"koos": 2},
+        "24": {"kesk": -2,"reform": -2,"ekre": 2,"sde": -2,"rohelised": -2,"isamaa": 1,"e200": -2,"parem": 2,"vaba": -1,"eerk": 2,"planb": -1,"koos": -2},
+        "25": {"kesk": 1,"reform": 1,"ekre": -2,"sde": 2,"rohelised": 2,"isamaa": -1,"e200": 2,"parem": -1,"vaba": -1,"eerk": -2,"planb": 0,"koos": 1},
+        "26": {"kesk": 2,"reform": 2,"ekre": 1,"sde": 1,"rohelised": -1,"isamaa": 2,"e200": 2,"parem": 2,"vaba": 1,"eerk": 1,"planb": 1,"koos": 1},
+        "27": {"kesk": 2,"reform": 2,"ekre": 0,"sde": 2,"rohelised": 2,"isamaa": 1,"e200": 2,"parem": 1,"vaba": 1,"eerk": 0,"planb": 1,"koos": 2}
       }
     }
   },
