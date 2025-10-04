@@ -4,6 +4,7 @@
   import {navigate, Route, Router} from 'svelte-routing'
   import Compass from 'src/pages/Compass.svelte'
   import {onMount} from 'svelte'
+  import LangSelect from 'src/components/LangSelect.svelte'
 
   onMount(() => {
     navigate('/tallinn2025')
@@ -18,6 +19,9 @@
 
 <main class="text-center pt-10">
   <h1>{t.title}</h1>
+  <div class="absolute top-4 right-4">
+    <LangSelect/>
+  </div>
 
   <Router>
     <Route path="/tallinn2025" component={Compass}/>
