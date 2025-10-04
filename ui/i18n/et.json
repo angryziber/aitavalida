@@ -1,5 +1,8 @@
 {
   "title": "Aita Valida",
+  "general": {
+    "optional": "valikuline"
+  },
   "kov": {
     "title": "Kohalike omavalitsuste valimised",
     "tallinn": {
