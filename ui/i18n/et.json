@@ -66,9 +66,9 @@
     }
   },
   "compass": {
-    "title": "Valija Kompass",
+    "title": "Valijakompass",
     "programs": "Erakondade programmid",
-    "disclaimer": "Valija Kompass on tööriist, mis aitab sul leida endale sobivaima erakonna või valimisliidu valimistel. Vastates küsimustele saad teada, millised erakonnad või valimisliidud on sinu seisukohtadele kõige lähemal. Lõpliku valiku tegemiseks tasub lisaks programmi lubadustele uurida ka kandidaati eelnevat sõnakindlust ja tegusid.",
+    "disclaimer": "Valija Kompass on tööriist, mis aitab sul leida endale sobivaima erakonna või valimisliidu valimistel. Vastates küsimustele saad teada, millised erakonnad või valimisliidud on sinu seisukohtadele kõige lähemal. Lõpliku valiku tegemiseks tasub lisaks programmi lubadustele uurida ka kandidaati varasemat usaldusväärsust ja tegusid.",
     "results": "Tulemused (lähedus sinu vastustele)",
     "options": {
       "-2": "Kindel ei",
@@ -97,14 +97,14 @@
         "15": "Kas kõik Tallinna lasteaiad ja koolid peaksid olema eestikeelsed?",
         "16": "Kas lasteaiakoht peaks olema tasuta juba esimesest lapsest?",
         "17": "Kas linn peaks looma rohkem lasteaedu ja koole, et klassid oleksid väiksemad?",
-        "18": "Kas linn peaks kaitsma haljasalasid ja parke uusarenduste arvelt?",
-        "19": "Kas Tallinna kaugkütte ja energia taristu investeeringud peaksid liikuma rohkem taastuvenergiale?",
+        "18": "Kas linn peaks eelistama haljasalade ja parkide säilitamist uusarendustele?",
+        "19": "Kas Tallinna kaugkütte- ja energiataristu investeeringud tuleks suunata rohkem taastuvenergiale?",
         "20": "Kas sotsiaaltoetuste asemel peaks linn panustama rohkem töövõimaluste loomisesse ja sotsiaalteenuste arendamisse?",
         "21": "Kas linn peaks avama rohkem kogukonnakeskusi ja rahastama kohalikke algatusi?",
         "22": "Kas linn peaks panustama rohkem suurte rahvusvaheliste ürituste ja festivalide korraldamisse?",
-        "23": "Kas linn peaks ametlikult toetama ööelu arengukava ja 24h linnastrateegiat?",
-        "24": "Kas linn peaks piirama sisserännet ja välisinimeste osalust kohalikes kogukondades?",
-        "25": "Kas linn peaks toetama expate ja kosmopoliitse mitmekultuurilise arengu?",
+        "23": "Kas linn peaks ametlikult toetama ööelu arengukava ja ööpäevaringset linnastrateegiat?",
+        "24": "Kas linn peaks piirama sisserännet ja välisriigi kodanike osalust kohalikes kogukondades?",
+        "25": "Kas linn peaks toetama uusimmigrante ja kosmopoliitset mitmekultuurilist arengut?",
         "26": "Kas Tallinn peaks rohkem panustama turismi arendamisse, et elavdada kohalikku majandust?",
         "27": "Kas linn peaks pakkuma rohkem maksusoodustusi ja lihtsamaid tingimusi väikeettevõtjatele ja alustavatele ettevõtetele?",
         "28": "Kas linn peaks looma eraldi fondi või programmi innovatsiooni ja start-up’ide toetamiseks?"
