@@ -41,7 +41,6 @@
 <div class="max-w-xl mx-auto mb-96">
   <p class="bg-blue-100 px-6 py-4 my-4">{t.compass.disclaimer}</p>
 
-  <p>{t.compass.programs}:</p>
   <Parties {parties}/>
   <!-- TODO: select party for comparison -->
 
