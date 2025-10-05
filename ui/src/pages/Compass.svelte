@@ -64,7 +64,8 @@
     </section>
   {/each}
 
-  <h2 class="my-8">{t.compass.results}</h2>
+  <h2 class="mt-8">{t.compass.results}</h2>
+  <p class="mb-8">{t.compass.resultsHelp}</p>
   {#each results as result}
     <div><b>{parties[result.party].name}</b>: {result.score.toFixed(2)}</div>
   {/each}

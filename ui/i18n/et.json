@@ -72,7 +72,8 @@
     "title": "Valijakompass",
     "programs": "Erakondade programmid",
     "disclaimer": "Valija Kompass on tööriist, mis aitab sul leida endale sobivaima erakonna või valimisliidu valimistel. Vastates küsimustele saad teada, millised erakonnad või valimisliidud on sinu seisukohtadele kõige lähemal. Lõpliku valiku tegemiseks tasub lisaks programmi lubadustele uurida ka kandidaati varasemat usaldusväärsust ja tegusid.",
-    "results": "Tulemused (lähedus sinu vastustele)",
+    "results": "Tulemused",
+    "resultsHelp": "(lähedus sinu vastustele)",
     "options": {
       "-2": "Kindel ei",
       "-1": "Pigem ei",
