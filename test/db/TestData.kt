@@ -7,5 +7,5 @@ import users.User
 /** Immutable domain object samples for unit tests */
 object TestData {
   val user = User("Test", "User", USER)
-  val compassAnswers = CompassAnswers("Buy groceries")
+  val compassAnswers = CompassAnswers("compass-slug", "en", null, null, mapOf("1" to 1, "2" to 2))
 }

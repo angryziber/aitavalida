@@ -7,7 +7,7 @@ import db.DBTest
 import db.TestData.compassAnswers
 import org.junit.jupiter.api.Test
 
-class TodoRepositoryTest: DBTest() {
+class CompassRepositoryTest: DBTest() {
   val repository = CompassRepository(db)
 
   @Test fun `save & load`() {
