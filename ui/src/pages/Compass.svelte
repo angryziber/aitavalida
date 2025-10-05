@@ -49,11 +49,11 @@
       <h3 class="sticky top-0 bg-yellow-100 py-1">{topic.name}</h3>
 
       {#each topic.questions as i}
-        <h4>{i}. {questions[i]}</h4>
+        <h4 class="mx-2">{i}. {questions[i]}</h4>
         <div class="flex justify-center pb-8">
           {#each options as option}
             {@const checked = answers[i] === option}
-            <button class="px-3 py-2 border" class:bg-gray-100={checked} aria-checked={checked} onclick={() => answers[i] = option}>
+            <button class="px-3 py-2 border max-sm:text-sm" class:bg-gray-100={checked} aria-checked={checked} onclick={() => answers[i] = option}>
               {t.compass.options[option.toString()]}
             </button>
           {/each}
