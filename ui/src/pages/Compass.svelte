@@ -11,6 +11,7 @@
 
   const options = [-2, -1, 0, 1, 2]
   const optionColors = ['bg-red-200', 'bg-red-100', 'bg-yellow-100', 'bg-green-100', 'bg-green-200']
+  const optionSelectedColors = ['bg-red-500', 'bg-red-400', 'bg-yellow-500', 'bg-green-400', 'bg-green-500']
   const parties = t.kov['2025'].parties
 
   let answers = JSON.parse(localStorage[slug] ?? '{}') as Record<string, number>
@@ -40,21 +41,21 @@
 <h2 class="my-2">{elections.name} - {t.compass.title}</h2>
 
 <div class="max-w-xl mx-auto mb-96">
-  <p class="bg-blue-100 px-6 py-4 my-4">{t.compass.disclaimer}</p>
+  <p class="bg-purple-500 text-white px-6 py-4 my-4">{t.compass.disclaimer}</p>
 
   <Parties {parties}/>
   <!-- TODO: select party for comparison -->
 
   {#each elections.topics as topic}
     <section class="mt-4 space-y-4">
-      <h3 class="sticky top-0 bg-blue-100 py-2">{topic.name}</h3>
+      <h3 class="sticky top-0 z-20 bg-purple-500 text-white py-2">{topic.name}</h3>
 
       {#each topic.questions as i}
         <h4 class="mx-2">{i}. {questions[i]}</h4>
         <div class="flex justify-center pb-8">
           {#each options as option, j}
             {@const checked = answers[i] === option}
-            <button class="px-3 py-2 border max-sm:text-sm {optionColors[j]}" class:border-black={checked} aria-checked={checked} onclick={() => answers[i] = option}>
+            <button class="px-3 py-2 max-sm:text-sm {checked ? optionSelectedColors[j] + ' text-white outline outline-black z-10' : optionColors[j]}" aria-checked={checked} onclick={() => answers[i] = option}>
               {t.compass.options[option.toString()]}
             </button>
           {/each}
