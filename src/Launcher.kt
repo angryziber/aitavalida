@@ -3,7 +3,7 @@ import db.initDB
 import klite.*
 import klite.annotations.annotated
 import klite.json.JsonBody
-import todos.TodoRoutes
+import compass.CompassRoutes
 import java.nio.file.Path
 import kotlin.reflect.full.primaryConstructor
 import kotlin.time.Duration.Companion.days
@@ -26,7 +26,7 @@ fun main() {
 
       before<AccessChecker>()
 
-      annotated<TodoRoutes>("/todos")
+      annotated<CompassRoutes>("/compass")
     }
     start()
   }

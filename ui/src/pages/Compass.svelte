@@ -1,17 +1,28 @@
 <script lang="ts">
-  import {t} from 'i18n'
+  import {lang, t} from 'i18n'
   import Parties from 'src/pages/Parties.svelte'
+  import api from 'src/api/api'
+  import type {CompassAnswers} from 'src/api/types'
 
-  export let name = 'tallinn2025' as const
+  export let slug = 'tallinn2025' as const
 
-  let elections = t.compass[name]
+  let elections = t.compass[slug]
   let questions = elections.questions
 
   const options = [-2, -1, 0, 1, 2]
   const parties = t.kov['2025'].parties
 
-  let answers = JSON.parse(localStorage[name] ?? '{}')
-  $: localStorage[name] = JSON.stringify(answers)
+  let answers = JSON.parse(localStorage[slug] ?? '{}') as Record<string, number>
+  $: if (Object.keys(answers).length) {
+    localStorage[slug] = JSON.stringify(answers)
+    save()
+  }
+
+  async function save() {
+    let id = localStorage['compassId']
+    id = await api.post('compass/answers', {id, compassSlug: slug, lang, answers} as CompassAnswers)
+    localStorage['compassId'] = id
+  }
 
   $: results = Object.keys(parties).map(p => {
     let score = 0

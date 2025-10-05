@@ -1,8 +1,8 @@
 export type Id<T extends Entity<T>> = string & {_of?: T}
 export type Entity<T extends Entity<T>> = {id: Id<T>}
 
-// class todos.Todo
-export interface Todo {completedAt?: Instant; id: Id<Todo>; item: string}
+// class compass.CompassAnswers
+export interface CompassAnswers {answers: Record<string, number>; compassSlug: string; id: Id<CompassAnswers>; ipAddress?: string; lang: string; updatedAt: Instant; userAgent?: string}
 // class users.Role
 export enum Role {ADMIN = 'ADMIN', USER = 'USER'}
 // class users.User
