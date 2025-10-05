@@ -38,10 +38,10 @@
   }).sort((a, b) => a.score - b.score)
 </script>
 
-<h2 class="my-2">{elections.name} - {t.compass.title}</h2>
+<h2 class="m-4">{elections.name} - {t.compass.title}</h2>
 
 <div class="max-w-xl mx-auto mb-96">
-  <p class="bg-purple-500 text-white px-6 py-4 my-4">{t.compass.disclaimer}</p>
+  <p class="bg-purple-200 px-6 py-4 my-4">{t.compass.disclaimer}</p>
 
   <Parties {parties}/>
   <!-- TODO: select party for comparison -->

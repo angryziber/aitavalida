@@ -15,11 +15,11 @@
     "2025": {
       "parties": {
         "kesk": {
-          "name": "Keskerakond (Центристская партия)",
+          "name": "Центристская партия",
           "url": "https://keskerakond.ee/wp-content/uploads/2025/09/Eesti_Keskerakonna_Tallinna_valimisplatvorm_2025_29_09_VALMIS.pdf"
         },
         "reform": {
-          "name": "Reformierakond (Партия реформ)",
+          "name": "Партия реформ",
           "url": "https://reform.ee/kohaliku-omavalitsuse-volikogu-valimised-2025/tallinn/valimisprogramm"
         },
         "ekre": {
@@ -27,15 +27,15 @@
           "url": "https://www.ekre.ee/muidugi-ekre/"
         },
         "sde": {
-          "name": "Sotsid (Социал-демократы, SDE)",
+          "name": "Социал-демократы",
           "url": "https://valimised.sotsid.ee/et/tallinna-programm/"
         },
         "rohelised": {
-          "name": "Rohelised (Зелёные)",
+          "name": "Зелёные",
           "url": "https://rohelised.ee/eestimaa-rohelised-kov-2025-tallinna-valimisprogramm/"
         },
         "isamaa": {
-          "name": "Isamaa (Отечество)",
+          "name": "Isamaa",
           "url": "https://kov25.isamaa.ee/"
         },
         "e200": {
@@ -43,15 +43,15 @@
           "url": "https://eesti200.ee/kov-2025/"
         },
         "parem": {
-          "name": "Parempoolsed (Правые)",
+          "name": "Parempoolsed",
           "url": "https://parempoolsed.ee/kov-2025/"
         },
         "vaba": {
-          "name": "Vabaerakond (Свободная партия, «Aru Pähe»)",
+          "name": "Aru Pähe",
           "url": "https://vabaerakond.ee/vabaerakond-aru-pahe-kov-2025-programm/"
         },
         "eerk": {
-          "name": "Rahvuslased ja Konservatiivid (Националисты и консерваторы)",
+          "name": "EERK",
           "url": "https://eerk.ee/eerk-kandidaadid-kohalikes-omavalitsustes/"
         },
         "planb": {
@@ -71,11 +71,11 @@
     "disclaimer": "Компас избирателя — это инструмент, который помогает найти наиболее подходящую для вас партию или избирательный союз на выборах. Отвечая на вопросы, вы узнаете, какие партии или союзы ближе всего к вашим взглядам. Для окончательного выбора стоит учитывать не только предвыборные обещания, но и прошлую надёжность и действия кандидатов.",
     "results": "Результаты (близость к вашим ответам)",
     "options": {
-      "-2": "Твёрдое нет",
+      "-2": "Точно нет",
       "-1": "Скорее нет",
       "0": "Нейтрально",
       "1": "Скорее да",
-      "2": "Твёрдое да"
+      "2": "Точно да"
     },
     "tallinn2025": {
       "name": "Выборы в Таллинне 2025",

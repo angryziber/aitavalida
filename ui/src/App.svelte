@@ -17,8 +17,8 @@
 
 <Toasts/>
 
-<main class="text-center pt-10">
-  <h1>{t.title}</h1>
+<main class="text-center pt-4">
+  <h1 style="font-weight: bold">{t.title}</h1>
   <div class="absolute top-4 right-4">
     <LangSelect/>
   </div>
