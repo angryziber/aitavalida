@@ -26,16 +26,28 @@
     localStorage['compassId'] = id
   }
 
+  function cosineSimilarity(vecA: Record<string, number>, vecB: Record<string, number>) {
+    let dot = 0, magA = 0, magB = 0
+
+    for (const [q, valA] of Object.entries(vecA)) {
+      const valB = vecB[q]
+      dot += valA * valB
+      magA += valA * valA
+      magB += valB * valB
+    }
+
+    if (!magA || !magB) return 0
+    return dot / (Math.sqrt(magA) * Math.sqrt(magB))
+  }
+
   $: results = Object.keys(parties).map(p => {
-    let score = 0
-    let count = 0
+    const partyAnswers = {}
     for (let i of Object.keys(questions)) {
       if (!(i in answers)) continue
-      score += (answers[i] - elections.parties[i][p]) ** 2
-      count++
+      partyAnswers[i] = elections.parties[i][p]
     }
-    return {party: p, score: Math.sqrt(score / count)}
-  }).sort((a, b) => a.score - b.score)
+    return {party: p, similarity: cosineSimilarity(answers, partyAnswers)}
+  }).sort((a, b) => b.similarity - a.similarity)
 </script>
 
 <h2 class="m-4">{elections.name} - {t.compass.title}</h2>
@@ -64,9 +76,8 @@
     </section>
   {/each}
 
-  <h2 class="mt-8">{t.compass.results}</h2>
-  <p class="mb-8">{t.compass.resultsHelp}</p>
+  <h2 class="mt-20 mb-8">{t.compass.results}</h2>
   {#each results as result}
-    <div><b>{parties[result.party].name}</b>: {result.score.toFixed(2)}</div>
+    <div><b>{parties[result.party].name}</b>: {(result.similarity * 100).toFixed(0)}%</div>
   {/each}
 </div>
