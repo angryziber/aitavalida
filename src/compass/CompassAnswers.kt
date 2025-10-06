@@ -8,7 +8,8 @@ import java.time.Instant
 data class CompassAnswers(
   val compassSlug: String,
   val lang: String,
-  val answers: Map<String, Int>,
+  val area: String? = null,
+  val answers: Map<String, Int> = emptyMap(),
   val results: Map<String, Double> = emptyMap(),
   val ipAddress: String? = null,
   val userAgent: String? = null,

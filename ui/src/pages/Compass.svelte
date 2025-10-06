@@ -4,9 +4,11 @@
   import api from 'src/api/api'
   import type {CompassAnswers} from 'src/api/types'
   import {type Answers, weightedCosineSimilarity} from 'src/pages/score'
+  import SelectField from 'src/components/SelectField.svelte'
 
   export let slug = 'tallinn2025' as const
 
+  let area = localStorage['area']
   let elections = t.compass[slug]
   let questions = elections.questions
 
@@ -18,6 +20,7 @@
   let answers = JSON.parse(localStorage[slug] ?? '{}') as Answers
   let results: Answers = {}
 
+  $: localStorage['area'] = area
   $: if (Object.keys(answers).length) {
     localStorage[slug] = JSON.stringify(answers)
     results = Object.keys(parties).map(p => [p, weightedCosineSimilarity(answers, elections.answers[p])])
@@ -27,7 +30,7 @@
 
   async function save() {
     let id = localStorage['compassId']
-    id = await api.post('compass/answers', {id, compassSlug: slug, lang, answers, results} as CompassAnswers)
+    id = await api.post('compass/answers', {id, compassSlug: slug, lang, area, answers, results} as CompassAnswers)
     localStorage['compassId'] = id
   }
 </script>
@@ -39,6 +42,8 @@
 
   <Parties {parties}/>
   <!-- TODO: select party for comparison -->
+
+  <SelectField options={t.kov.tallinn} emptyOption={t.kov.chooseArea} bind:value={area} class="my-2"/>
 
   {#each elections.topics as topic}
     <section class="mt-4 space-y-4">
@@ -61,6 +66,6 @@
   <h2 class="mt-20">{t.compass.results}</h2>
   <p class="mb-8 text-muted">{t.compass.resultsHelp}</p>
   {#each Object.entries(results) as [party, similarity]}
-    <div><b>{parties[party].name}</b>: {(similarity * 100).toFixed(0)}%</div>
+    <div class="mb-1"><b>{parties[party].name}</b>: {(similarity * 100).toFixed(0)}%</div>
   {/each}
 </div>

@@ -5,6 +5,7 @@
   },
   "kov": {
     "title": "Kohalike omavalitsuste valimised",
+    "chooseArea": "Vali piirkond",
     "tallinn": {
       "haabersti": "Haabersti",
       "kesklinn": "Kesklinn",

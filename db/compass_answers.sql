@@ -14,3 +14,6 @@ create trigger compass_answers_history after update on compass_answers for each 
 
 --changeset compass_answers.results
 alter table compass_answers add column results jsonb not null default '{}';
+
+--changeset compass_answers.area
+alter table compass_answers add column area text;
