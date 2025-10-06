@@ -13,9 +13,9 @@
       "pohja": "Пыхья-Таллинн"
     },
     "2025": {
-      "partyAnswers": {
+      "parties": {
         "kesk": {
-          "name": "Центристская партия",
+          "name": "Центристы",
           "url": "https://keskerakond.ee/wp-content/uploads/2025/09/Eesti_Keskerakonna_Tallinna_valimisplatvorm_2025_29_09_VALMIS.pdf"
         },
         "reform": {
