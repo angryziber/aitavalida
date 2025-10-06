@@ -41,7 +41,7 @@
     const cosine = dot / (Math.sqrt(magA) * Math.sqrt(magB))
     const cosineNormalized = (cosine + 1) / 2
     const overlapNormalized = rawOverlap / Object.keys(vecA).length
-    return (cosineNormalized + overlapNormalized) / 2
+    return cosineNormalized * 0.8 + overlapNormalized * 0.2
   }
 
   $: results = Object.keys(parties).map(p => {
