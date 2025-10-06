@@ -44,13 +44,8 @@
     return cosineNormalized * 0.8 + overlapNormalized * 0.2
   }
 
-  $: results = Object.keys(parties).map(p => {
-    const partyAnswers = {}
-    for (let i of Object.keys(questions)) {
-      if (!(i in answers)) continue
-      partyAnswers[i] = elections.parties[i][p]
-    }
-    return {party: p, similarity: weightedCosineSimilarity(answers, partyAnswers)}
+  $: results = Object.keys(parties).map(party => {
+    return {party, similarity: weightedCosineSimilarity(answers, elections.answers[party])}
   }).sort((a, b) => b.similarity - a.similarity)
 </script>
 
