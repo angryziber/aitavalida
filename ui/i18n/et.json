@@ -73,7 +73,7 @@
     "programs": "Erakondade programmid",
     "disclaimer": "See küsimustik aitab sul leida valimistel endale sobivaima erakonna või valimisliidu, mis kõige paremini vastab sinu seisukohtadele oma programmi põhjal. Lõpliku valiku tegemiseks tasub lisaks programmi lubadustele uurida ka kandidaatide varasemat usaldusväärsust ja tegusid. Kui valikut ei tee, võib see anda eelise kõige populaarsemale erakonnale.",
     "results": "Tulemused",
-    "resultsHelp": "Kui palju sa nõustud erakonna seisukohtadega.",
+    "resultsHelp": "Kui palju sa nõustud erakonna seisukohtadega",
     "options": {
       "-2": "Kindel ei",
       "-1": "Pigem ei",

@@ -44,9 +44,8 @@
     return cosineNormalized * 0.8 + overlapNormalized * 0.2
   }
 
-  $: results = Object.keys(parties).map(party => {
-    return {party, similarity: weightedCosineSimilarity(answers, elections.answers[party])}
-  }).sort((a, b) => b.similarity - a.similarity)
+  $: results = Object.keys(parties).map(p => [p, weightedCosineSimilarity(answers, elections.answers[p])])
+      .sort((a, b) => b[1] - a[1]).toObject()
 </script>
 
 <h2 class="m-4">{elections.name} - {t.compass.title}</h2>
@@ -59,7 +58,7 @@
 
   {#each elections.topics as topic}
     <section class="mt-4 space-y-4">
-      <h3 class="sticky top-0 z-20 bg-purple-500 text-white py-2">{topic.name}</h3>
+      <h3 class="sticky top-0 z-20 bg-purple-500 text-white p-2">{topic.name}</h3>
 
       {#each topic.questions as i}
         <h4 class="mx-2">{i}. {questions[i]}</h4>
@@ -77,7 +76,7 @@
 
   <h2 class="mt-20">{t.compass.results}</h2>
   <p class="mb-8 text-muted">{t.compass.resultsHelp}</p>
-  {#each results as result}
-    <div><b>{parties[result.party].name}</b>: {(result.similarity * 100).toFixed(0)}%</div>
+  {#each Object.entries(results) as [party, similarity]}
+    <div><b>{parties[party].name}</b>: {(similarity * 100).toFixed(0)}%</div>
   {/each}
 </div>
