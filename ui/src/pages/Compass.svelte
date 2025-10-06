@@ -3,6 +3,7 @@
   import Parties from 'src/pages/Parties.svelte'
   import api from 'src/api/api'
   import type {CompassAnswers} from 'src/api/types'
+  import {type Answers, weightedCosineSimilarity} from 'src/pages/score'
 
   export let slug = 'tallinn2025' as const
 
@@ -14,9 +15,13 @@
   const optionSelectedColors = ['bg-red-500', 'bg-red-400', 'bg-yellow-500', 'bg-green-400', 'bg-green-500']
   const parties = t.kov['2025'].parties
 
-  let answers = JSON.parse(localStorage[slug] ?? '{}') as Record<string, number>
+  let answers = JSON.parse(localStorage[slug] ?? '{}') as Answers
+  let results: Answers = {}
+
   $: if (Object.keys(answers).length) {
     localStorage[slug] = JSON.stringify(answers)
+    results = Object.keys(parties).map(p => [p, weightedCosineSimilarity(answers, elections.answers[p])])
+      .sort((a, b) => (b[1] as number) - (a[1] as number)).toObject()
     save()
   }
 
@@ -25,27 +30,6 @@
     id = await api.post('compass/answers', {id, compassSlug: slug, lang, answers} as CompassAnswers)
     localStorage['compassId'] = id
   }
-
-  function weightedCosineSimilarity(vecA: Record<string, number>, vecB: Record<string, number>) {
-    let dot = 0, magA = 0, magB = 0, rawOverlap = 0
-
-    for (const [q, valA] of Object.entries(vecA)) {
-      const valB = vecB[q]
-      dot += valA * valB
-      magA += valA * valA
-      magB += valB * valB
-      rawOverlap += Math.min(Math.abs(valA), Math.abs(valB)) / 2
-    }
-
-    if (!magA || !magB) return 0
-    const cosine = dot / (Math.sqrt(magA) * Math.sqrt(magB))
-    const cosineNormalized = (cosine + 1) / 2
-    const overlapNormalized = rawOverlap / Object.keys(vecA).length
-    return cosineNormalized * 0.8 + overlapNormalized * 0.2
-  }
-
-  $: results = Object.keys(parties).map(p => [p, weightedCosineSimilarity(answers, elections.answers[p])])
-      .sort((a, b) => b[1] - a[1]).toObject()
 </script>
 
 <h2 class="m-4">{elections.name} - {t.compass.title}</h2>

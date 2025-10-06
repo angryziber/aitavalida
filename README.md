@@ -17,4 +17,4 @@ Check [Klite Tutorial](https://github.com/codeborne/klite/blob/main/TUTORIAL.md)
 
 Important parts:
 * Compass questions and answers: [Estonian](ui/i18n/et.json) [Russian](ui/i18n/ru.json)
-* [Scoring algorithm](ui/src/pages/Compass.svelte)
+* [Scoring algorithm](ui/src/pages/score.ts)
