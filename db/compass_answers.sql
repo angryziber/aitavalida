@@ -11,3 +11,6 @@ create table compass_answers(
 
 --changeset compass_answers_history
 create trigger compass_answers_history after update on compass_answers for each row execute procedure add_change_history();
+
+--changeset compass_answers.results
+alter table compass_answers add column results jsonb not null default '{}';

@@ -27,7 +27,7 @@
 
   async function save() {
     let id = localStorage['compassId']
-    id = await api.post('compass/answers', {id, compassSlug: slug, lang, answers} as CompassAnswers)
+    id = await api.post('compass/answers', {id, compassSlug: slug, lang, answers, results} as CompassAnswers)
     localStorage['compassId'] = id
   }
 </script>
