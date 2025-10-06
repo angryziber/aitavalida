@@ -14,3 +14,7 @@ An app to help people in Estonia to choose their political party and candidates 
 * UI with Svelte/TailwindCSS
 
 Check [Klite Tutorial](https://github.com/codeborne/klite/blob/main/TUTORIAL.md) if you want to start from scratch with Klite.
+
+Important parts:
+* Compass questions and answers: [Estonian](ui/i18n/et.json) [Russian](ui/i18n/ru.json)
+* [Scoring algorithm](ui/src/pages/Compass.svelte)
