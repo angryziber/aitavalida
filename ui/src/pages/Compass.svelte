@@ -52,7 +52,7 @@
 
 <h2 class="m-4">{elections.name} - {t.compass.title}</h2>
 
-<div class="max-w-xl mx-auto mb-96">
+<div class="max-w-xl mx-auto mb-20">
   <p class="bg-purple-200 px-6 py-4 my-4">{t.compass.disclaimer}</p>
 
   <Parties {parties}/>

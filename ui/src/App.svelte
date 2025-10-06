@@ -26,4 +26,6 @@
   <Router>
     <Route path="/tallinn2025" component={Compass}/>
   </Router>
+
+  <a href="https://github.com/angryziber/aitavalida" target="_blank" class="py-4">Open Source @ GitHub</a>
 </main>
