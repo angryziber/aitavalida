@@ -1,0 +1,151 @@
+{
+  "title": "Help to Vote",
+  "general": {
+    "optional": "optional"
+  },
+  "kov": {
+    "title": "Local Government Elections",
+    "chooseArea": "Choose area",
+    "tallinn": {
+      "haabersti": "Haabersti",
+      "kesklinn": "City Centre",
+      "kristiine": "Kristiine",
+      "lasnamäe": "Lasnamäe",
+      "mustamäe": "Mustamäe",
+      "nõmme": "Nõmme",
+      "pirita": "Pirita",
+      "pohja": "North Tallinn"
+    },
+    "2025": {
+      "parties": {
+        "kesk": {
+          "name": "Centre Party",
+          "url": "https://keskerakond.ee/wp-content/uploads/2025/09/Eesti_Keskerakonna_Tallinna_valimisplatvorm_2025_29_09_VALMIS.pdf"
+        },
+        "reform": {
+          "name": "Reform Party",
+          "url": "https://reform.ee/kohaliku-omavalitsuse-volikogu-valimised-2025/tallinn/valimisprogramm"
+        },
+        "ekre": {
+          "name": "EKRE",
+          "url": "https://www.ekre.ee/muidugi-ekre/"
+        },
+        "sde": {
+          "name": "Social Democrats (SDE)",
+          "url": "https://valimised.sotsid.ee/et/tallinna-programm/"
+        },
+        "rohelised": {
+          "name": "Greens",
+          "url": "https://rohelised.ee/eestimaa-rohelised-kov-2025-tallinna-valimisprogramm/"
+        },
+        "isamaa": {
+          "name": "Isamaa (Fatherland)",
+          "url": "https://kov25.isamaa.ee/"
+        },
+        "e200": {
+          "name": "Eesti 200",
+          "url": "https://eesti200.ee/kov-2025/"
+        },
+        "parem": {
+          "name": "Parempoolsed",
+          "url": "https://parempoolsed.ee/kov-2025/"
+        },
+        "vaba": {
+          "name": "Aru Pähe (Vabaerakond)",
+          "url": "https://vabaerakond.ee/vabaerakond-aru-pahe-kov-2025-programm/"
+        },
+        "eerk": {
+          "name": "EERK",
+          "url": "https://eerk.ee/eerk-kandidaadid-kohalikes-omavalitsustes/"
+        },
+        "planb": {
+          "name": "Plan B",
+          "url": "https://www.plaanb.ee/programm/tallinna-plaanb-valimisliit/"
+        },
+        "koos": {
+          "name": "KOOS (Together)",
+          "url": "https://koos-vmeste.ee/"
+        }
+      }
+    }
+  },
+  "compass": {
+    "title": "Voter Compass",
+    "programs": "Party programs",
+    "disclaimer": "This questionnaire helps you find the political party or election coalition that best matches your views based on their program. To make a final choice, it’s also worth looking into the candidates’ past reliability and actions. If you don’t make a choice, it may give an advantage to the most popular party.",
+    "results": "Results",
+    "resultsHelp": "How much you agree with the party’s positions",
+    "options": {
+      "-2": "Strongly disagree",
+      "-1": "Somewhat disagree",
+      "0": "Neutral",
+      "1": "Somewhat agree",
+      "2": "Strongly agree"
+    },
+    "tallinn2025": {
+      "name": "Tallinn Local Elections 2025",
+      "questions": {
+        "1": "Should city districts have more decision-making power and their own budgets?",
+        "2": "Should the processing of building permits and detailed plans be significantly accelerated?",
+        "3": "Should residents have more opportunities to participate in city decisions (public consultations, participatory budgeting, discussions)?",
+        "4": "Should the city publish all major decisions and contracts, including in machine-readable form?",
+        "5": "Should the city halt new infrastructure projects until additional studies and analyses are done?",
+        "6": "Does the membership of city officials in political party leadership bodies affect the objectivity of city governance?",
+        "7": "Should the city build more municipal rental apartments at affordable prices?",
+        "8": "Should the city increase support for renovating private and apartment buildings (facades, energy efficiency)?",
+        "9": "Should reducing land tax and local taxes in Tallinn be a priority?",
+        "10": "Should free public transport continue in Tallinn?",
+        "11": "Should the night public transport network and frequency be increased?",
+        "12": "Should car traffic in the city centre be reduced?",
+        "13": "Should developing public urban space for people be prioritized even if it reduces space for cars?",
+        "14": "Should the city be responsible for snow and ice removal on sidewalks and cycle paths?",
+        "15": "Should all kindergartens and schools in Tallinn be Estonian-language?",
+        "16": "Should kindergarten be free starting from the first child?",
+        "17": "Should the city build more kindergartens and schools to reduce class sizes?",
+        "18": "Should the city prioritize preserving green areas and parks over new developments?",
+        "19": "Should investments in Tallinn’s district heating and energy infrastructure focus more on renewable energy?",
+        "20": "Instead of social benefits, should the city invest more in job creation and developing social services?",
+        "21": "Should the city open more community centers and fund local initiatives?",
+        "22": "Should the city invest more in organizing major international events and festivals?",
+        "23": "Should the city officially support a nightlife development plan and a 24-hour city strategy?",
+        "24": "Should the city limit immigration and foreign citizens’ participation in local communities?",
+        "25": "Should the city support new immigrants and cosmopolitan multicultural development?",
+        "26": "Should Tallinn invest more in tourism development to boost the local economy?",
+        "27": "Should the city offer more tax incentives and simpler conditions for small and start-up businesses?",
+        "28": "Should the city create a dedicated fund or program to support innovation and start-ups?"
+      },
+      "topics": [
+        {
+          "name": "City Governance and Bureaucracy"
+        },
+        {
+          "name": "Housing Policy and Taxes"
+        },
+        {
+          "name": "Transport and Urban Development"
+        },
+        {
+          "name": "Education and Language"
+        },
+        {
+          "name": "Environment and Green Transition"
+        },
+        {
+          "name": "Social and Health Care"
+        },
+        {
+          "name": "Culture, Nightlife, and Tourism"
+        },
+        {
+          "name": "Diversity, Cosmopolitanism, and Immigration"
+        },
+        {
+          "name": "Economy, Small Business, and Innovation"
+        }
+      ]
+    }
+  },
+  "errors": {
+    "technical": "Technical error, please try again"
+  }
+}

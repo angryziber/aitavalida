@@ -14,7 +14,8 @@ export function resolve(key: string, from: Record<string, any> = t): any {
 function choosePreferredLang() {
   const params = new URLSearchParams(location.search)
   let paramLang = params.get('lang')
-  let lang = paramLang ?? localStorage['lang'] ?? navigator.language.split('-')[0]
+  let lang = paramLang ?? localStorage['lang']
+  if (!lang) lang = langs.find(lang => navigator.languages.includes(lang))
   if (paramLang) localStorage['lang'] = paramLang
   return langs.includes(lang) ? lang : langs[0]
 }
@@ -22,6 +23,7 @@ function choosePreferredLang() {
 async function load() {
   if (lang === 'et') return et
   if (lang === 'ru') return mergeDicts((await import('./ru.json')).default, et)
+  if (lang === 'en') return mergeDicts((await import('./en.json')).default, et)
   else throw new Error('Unsupported lang: ' + lang)
 }
 
