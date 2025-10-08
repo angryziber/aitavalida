@@ -1,5 +1,5 @@
 {
-  "title": "Help to Vote",
+  "title": "Help me Vote",
   "general": {
     "optional": "optional"
   },
@@ -77,9 +77,9 @@
     "resultsHelp": "How much you agree with the party’s positions",
     "options": {
       "-2": "Strongly disagree",
-      "-1": "Somewhat disagree",
+      "-1": "Disagree",
       "0": "Neutral",
-      "1": "Somewhat agree",
+      "1": "Agree",
       "2": "Strongly agree"
     },
     "tallinn2025": {
