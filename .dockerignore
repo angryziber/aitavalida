@@ -7,3 +7,4 @@ build
 /docker-compose*
 README.*
 .DS_Store
+/logs

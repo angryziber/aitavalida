@@ -1,9 +1,0 @@
-services:
-  aitavalida:
-    networks:
-      - proxy
-      - default
-
-networks:
-  proxy:
-    external: true
