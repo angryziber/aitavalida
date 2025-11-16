@@ -63,10 +63,10 @@ tasks.jar {
   dependsOn("deps")
   doFirst {
     manifest {
-      attributes(
+      attributes(mapOf(
         "Main-Class" to mainClassName,
         "Class-Path" to File("$buildDir/libs/deps").listFiles()?.joinToString(" ") { "deps/${it.name}"}
-      )
+      ))
     }
   }
 }
