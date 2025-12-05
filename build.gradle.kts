@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import java.io.ByteArrayOutputStream
 
 plugins {
-  kotlin("jvm") version "2.2.0"
+  kotlin("jvm") version "2.2.21"
 }
 
 repositories {
@@ -12,19 +12,19 @@ repositories {
 }
 
 dependencies {
-  fun klite(module: String) = "com.github.codeborne.klite:klite-$module:1.7.0"
+  fun klite(module: String) = "com.github.keksworks.klite:klite-$module:1.7.0"
   implementation(klite("server"))
   implementation(klite("json"))
   implementation(klite("i18n"))
   implementation(klite("jdbc"))
   implementation(klite("slf4j"))
-  implementation("org.postgresql:postgresql:42.7.5")
+  implementation("org.postgresql:postgresql:42.7.8")
 
   testImplementation(klite("jdbc-test"))
   testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.11.4")
-  testImplementation("ch.tutteli.atrium:atrium-fluent:1.3.0-alpha-1")
-  testImplementation("io.mockk:mockk:1.13.16")
+  testImplementation("ch.tutteli.atrium:atrium-fluent:1.3.0-alpha-2")
+  testImplementation("io.mockk:mockk:1.14.6")
   testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.9.0")
 }
 
@@ -42,8 +42,7 @@ sourceSets {
 tasks.test {
   workingDir(rootDir)
   useJUnitPlatform()
-  // enable JUnitAssertionImprover from klite.jdbc-test
-  jvmArgs("-DENV=test", "-Djunit.jupiter.extensions.autodetection.enabled=true", "--add-opens=java.base/java.lang=ALL-UNNAMED", "-XX:-OmitStackTraceInFastThrow")
+  jvmArgs("-DENV=test", "--add-opens=java.base/java.lang=ALL-UNNAMED", "-XX:-OmitStackTraceInFastThrow")
 }
 
 tasks.withType<KotlinCompile> {
@@ -64,10 +63,10 @@ tasks.jar {
   dependsOn("deps")
   doFirst {
     manifest {
-      attributes(
+      attributes(mapOf(
         "Main-Class" to mainClassName,
         "Class-Path" to File("$buildDir/libs/deps").listFiles()?.joinToString(" ") { "deps/${it.name}"}
-      )
+      ))
     }
   }
 }
