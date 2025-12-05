@@ -1,0 +1,12 @@
+services:
+  aitavalida:
+    networks:
+      - proxy
+      - default
+    labels:
+      - caddy=aitavalida.azib.net
+      - caddy.reverse_proxy={{upstreams 8080}}
+
+networks:
+  proxy:
+    external: true
